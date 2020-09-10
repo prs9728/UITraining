@@ -9,7 +9,10 @@ import React,{Component} from 'react';
             username:"",
             firstname:"",
             lastname:"",
-            email:""
+            email:"",
+            age:"",
+            gender:"",
+            terms:""
         }
     }
 
@@ -25,25 +28,25 @@ import React,{Component} from 'react';
             <form>
                 <div><label for="username">Username</label>
                 <input type="text" placeholder="username" name="username" id="username" onChange={this.handleInputchange}/>
-                <p>You entered : {this.state.username}</p>
+                <p> {this.state.username}</p>
                 </div>
                 <br />
 
                 <div><label for="firstname">Firstname</label>
                 <input type="text" placeholder="firstname" name="firstname" id="firstname" onChange={this.handleInputchange}/>
-                <p>You entered : {this.state.firstname}</p>
+                <p> {this.state.firstname}</p>
                 </div>
                 <br />
 
                 <div><label for="lastname">Lastname</label>
                 <input type="text" placeholder="lastname" name="lastname" id="lastname" onChange={this.handleInputchange}/>
-                <p>You entered : {this.state.lastname}</p>
+                <p> {this.state.lastname}</p>
                 </div>
                 <br />
 
                 <div><label for="email">Email</label>
                 <input type="email" placeholder="email" name="email" id="email" onChange={this.handleInputchange}/>
-                <p>You entered : {this.state.email}</p>
+                <p> {this.state.email}</p>
                 </div>
                 <br />
                 
@@ -64,10 +67,10 @@ import React,{Component} from 'react';
                 </label>
                 </div>
 
-                <div><label for="terms"></label>
+                <div><label for="terms">Terms and Conditions</label>
                 <input type="checkbox" name="terms" id="terms" />
                 <label>
-                I agree terms and Conditions
+                I agree to the  terms and Conditions
                 </label>
                 </div>
                 </form>
